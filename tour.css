@@ -1,0 +1,240 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 20px;
+    font-size: 15px;
+}
+html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+.layar-dalam {
+    width: 1000px;
+    margin: auto;
+}
+nav {
+    z-index: 100;
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    border-bottom: 1px solid #b1b1b1;
+    line-height: 60px;
+    width: 100%;
+    transition: background-color 0.5s ease;
+  }
+  nav.putih {
+    background-color: #fff;
+  }
+  nav .logo {
+    float: left;
+    position: relative;
+    line-height: 55px;
+    text-align: center;
+  }
+  nav .logo img {
+    vertical-align: middle;
+    width: 120px;
+  }
+  
+  nav .menu {
+    float: right;
+    height: 60px;
+    max-width: 600px;
+  }
+  
+  nav .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav .menu ul li {
+    list-style-type: none;
+    float: left;
+    line-height: 60px;
+  }
+  
+  nav ul li a {
+    color: black;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+body {
+    background-color: #f6f6f6;
+    color: #333;
+    padding: 0;
+    margin: 0;
+}
+.container {
+    width: 100%;
+    background-color: #f6f6f6;
+    display: block
+}
+
+.content {
+    margin: 20px auto 20px;
+    width: 1180px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+footer {
+    padding: 50px 0px 50px 0px;
+    background-color: #343a40;
+    color: #fff;
+  }
+  footer .layar-dalam {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  footer .layar-dalam div {
+    width: 20%;
+  }
+  footer .layar-dalam h5 {
+    margin-top: 0px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  footer .layar-dalam .copyright {
+    width: 100%;
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 1px solid #666;
+    text-align: center;
+  }
+  @media screen and (max-width: 991.98px) {
+    .layar-dalam, .header {
+      width: 90%;
+    }
+    nav .menu ul {
+      display: none;
+      margin-top: 60px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+    nav .menu ul li {
+      width: 100%;
+      border-bottom: 1px solid #ccc;
+      background-color: #fff;
+      line-height: 40px;
+    }
+    nav .menu ul li a {
+      color: #333;
+    }
+    .tombol-menu {
+      display: flex;
+    }
+    .blog .area {
+      display: block;
+    }
+    .blog div.area div {
+      width: 100%;
+    }
+    .blog .area .gambar {
+      border-radius: 5px 5px 0px 0px;
+      height: 200px;
+    }
+    .support {
+      display: block;
+    }
+    .support div {
+      width: 100%;
+      padding-bottom: 30px;
+    }
+  }
+.carousel-inner {
+    height: 600px;
+}
+
+/*layoutisi*/
+.layoutisi {
+  width: 500px;
+  padding: 20px;
+  float: left;
+  background-color: #fff;
+}
+.layoutisi p {
+  text-align: justify;
+}
+.day {
+  font-weight: bold;
+  text-align: center;
+}
+.layoutisi h5 {
+  font-weight: bold;
+  color: #1d2458;
+}
+.poster{
+  float: right;
+  margin-top: 2px;
+}
+
+@font-face {
+  font-family: 'trajan';
+  src: url(font/trajan-pro/Trajan\ Pro.ttf);
+}
+
+.container .header {
+  background-color: #fff;
+  display: block;
+}
+.container2 {
+  margin-top: 60px;
+  width: 100%;
+  display: inline-block;
+}
+.title {
+  background-color: #fff;
+  display: block;
+  height: 60px;
+  padding-left: 180px;
+  padding-top: 15px;
+}
+
+.title h2 {
+  font-family: 'trajan';
+  font-size: 30px;
+}
+
+.bungkus {
+  background-color: #f6f6f6;
+}
+
+
+
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+ .cf:before,
+ .cf:after {
+     content: " "; /* 1 */
+     display: table; /* 2 */
+ }
+ 
+ .cf:after {
+     clear: both;
+ }
+ 
+ /**
+  * For IE 6/7 only
+  * Include this rule to trigger hasLayout and contain floats.
+  */
+ .cf {
+     *zoom: 1;
+ }
